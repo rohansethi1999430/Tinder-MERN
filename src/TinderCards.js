@@ -11,7 +11,7 @@ function TinderCards() {
         },
         {
             name:'Jeff Bezos',
-            url:'https://wallpapercave.com/w/wp4025589'
+            url:'https://wallpapercave.com/w/wp4025589.jpg'
         }
     ]);
 
@@ -33,10 +33,12 @@ function TinderCards() {
                 preventSwipe={['up','down']}
                 onSwipe={(dir)=>swiped(dir,person.name)}
                 onCardLeftScreen={()=>outOfFrame(person.name)}
-
-
                 >
-
+                    <div style={{backgroundImage:`url(${person.url})`}}
+                    className='card'
+                    >
+                        <h3>{person.name}</h3>
+                    </div>
                 </TinderCard>
             ))}
             </div>

@@ -7,7 +7,7 @@ function TinderCards() {
     const [people,setPeople]=useState([
         {
             name:'Elon Musk',
-            url:'https://wallpapercave.com/wp/wp2048432.jpg'
+            url:'https://wallpapercave.com/wp/wp5227295.jpg'
         },
         {
             name:'Jeff Bezos',
